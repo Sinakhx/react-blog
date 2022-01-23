@@ -1,0 +1,4 @@
+{
+    "/json-api/v1/*": "$1",
+    "/article-categories/:category": "/articles?category=:category"
+}

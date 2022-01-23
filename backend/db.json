@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nickname": "sina",
+      "email": "khodabandehloo.sina@gmail.com",
+      "password": "12345",
+      "isLoggedIn": false
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "first article",
+      "mainText": "first article's main text",
+      "createdDate": "2022-01-24T00:06:54.795Z",
+      "author": "sina",
+      "category": "sports"
+    },
+    {
+      "id": 2,
+      "title": "second article",
+      "mainText": "second article's main text",
+      "createdDate": "2022-01-24T00:06:54.795Z",
+      "author": "sina",
+      "category": "lifeStyle"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "comment 1 for article 1 goes here.",
+      "createdAt": "2022-01-24T00:06:58.795Z",
+      "createdBy": "sina",
+      "articleId": 1
+    }
+  ]
+}
