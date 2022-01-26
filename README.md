@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) blog project with `json-server` as fake backend.
 
+> This is still a work in progress
+
 ## Getting Started
 
 First, run the development server:
