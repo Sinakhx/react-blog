@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
+import { Home } from "../components";
+import { Layout } from "../containers/Layout";
 
-const Home: NextPage = () => {
+const MainPage: NextPage = () => {
     return (
         <div className="container">
             <Head>
@@ -12,36 +13,11 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
             </Head>
-
-            <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Welcome to <span>Sinakhx Blog!</span>
-                </h1>
-
-                <p className={styles.description}>
-                    Get started by joining us and creating a new post!
-                </p>
-
-                <div className={styles.grid}>
-                    <a href="https://nextjs.org/docs" className={styles.card}>
-                        <h2>Documentation &rarr;</h2>
-                        <p>Find in-depth information about Next.js features and API.</p>
-                    </a>
-
-                    <a href="https://nextjs.org/learn" className={styles.card}>
-                        <h2>Learn &rarr;</h2>
-                        <p>Learn about Next.js in an interactive course with quizzes!</p>
-                    </a>
-                </div>
-            </main>
-
-            <footer className={styles.footer}>
-                <a href="https://github.com/Sinakhx" target="_blank" rel="noopener noreferrer">
-                  Powered by &nbsp; <strong>Sina Khodabandehloo &copy; 2022</strong>
-                </a>
-            </footer>
+            <Layout>
+                <Home />
+            </Layout>
         </div>
     );
 };
 
-export default Home;
+export default MainPage;
